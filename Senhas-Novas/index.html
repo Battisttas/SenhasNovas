@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Links -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- Link Css -->
+    <link rel="stylesheet" type="text/css" href="Src/Css/styles.css" media="screen">
+    <!-- Img Aba -->
+       <link rel="icon" href="Src/Img/images.png" type="image/x-icon">
+    <!-- Titulo Aba -->
+    <title>Novas Senhas</title>
+</head>
+
+<body>
+    <!-- Inicio -->
+    <div id="container">
+        <img src="Src/Img/cadeado.webp" id="password_img" alt="">
+        <h1 id="title">Gerador de Senhas</h1>
+        <!-- Onde aparece a senha -->
+        <div id="password_container">
+            <span id="password"></span>
+            <button id="copy">
+                <i class="fa-regular fa-copy"></i>
+            </button>
+        </div>
+        <div id="password_items">
+            <div class="item">
+                <input id="size" name="size" type="number">
+                <label for="size">
+                    Criação da Senhas
+                </label>
+            </div>
+            <!-- Para incluir letras Maiúscula  -->
+            <div class="item">
+                <input type="checkbox" name="include_uppercase" id="include_uppercase">
+                <label for="include_uppercase">
+                    Incluir letra Maiúscula
+                </label>
+            </div>
+            <!-- Para incluir letras Minúscula  -->
+            <div class="item">
+                <input type="checkbox" name="include_lowercase" id="include_lowercase">
+                <label for="include_lowercase">
+                    Incluir letra Minúscula
+                </label>
+            </div>
+            <!-- Para incluir Números -->
+            <div class="item">
+                <input type="checkbox" name="include_number" id="include_number">
+                <label for="include_number">
+                    Incluir Números
+                </label>
+            </div>
+            <!-- Para incluir caracteres especial -->
+            <div class="item">
+                <input type="checkbox" name="include_special_character" id="include_special_character">
+                <label for="include_special_character">
+                    Incluir caractere Especial
+                </label>
+            </div>
+            <!-- Botão para gerar senha -->
+            <button id="generate">
+                Gerar senha
+            </button>
+        </div>
+    </div>
+    <!-- Fim -->
+    <!-- Link Js -->
+    <script src="Src/Js/scripts.js"></script>
+</body>
+
+</html>
